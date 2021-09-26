@@ -1,0 +1,34 @@
+.search {
+	width: 300px;
+	margin: 20px auto;
+}
+.gif-img {
+	background-image: url('/img/loading.gif');
+	height: 500px;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.no-results {
+	display: none;
+	align-items: center;
+	&__img-container {
+		width: 400px;
+		margin: auto;
+	}
+	&__img {
+		width: 100%;
+		object-fit: scale-down;
+	}
+}
+
+.card {
+	&__img-container {
+		height: 250px;
+		padding: 15px;
+	}
+	&__img {
+		height: 100%;
+		object-fit: scale-down;
+	}
+}

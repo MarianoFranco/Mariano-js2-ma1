@@ -1,0 +1,45 @@
+.search {
+  width: 300px;
+  margin: 20px auto;
+}
+
+.gif-img {
+  background-image: url("/img/loading.gif");
+  height: 500px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.no-results {
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.no-results__img-container {
+  width: 400px;
+  margin: auto;
+}
+
+.no-results__img {
+  width: 100%;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+}
+
+.card__img-container {
+  height: 250px;
+  padding: 15px;
+}
+
+.card__img {
+  height: 100%;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+}
+
+.wishlist__message {
+  display: none;
+}
+/*# sourceMappingURL=styles.css.map */
