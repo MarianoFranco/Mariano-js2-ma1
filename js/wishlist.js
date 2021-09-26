@@ -1,7 +1,6 @@
-import { saveToStorage, getStorageItem } from './libs/localStorageHelpers.js';
+import { getStorageItem } from './libs/localStorageHelpers.js';
 
 let wishList = getStorageItem('wishList');
-console.log(wishList.length);
 
 let wishMessage = document.querySelector('.wishlist__message');
 

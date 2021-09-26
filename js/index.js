@@ -39,14 +39,8 @@ searchBar.onkeyup = function () {
 	}
 	let button = document.querySelectorAll('.btn');
 
-	console.log(button);
-
 	button.forEach((element) => {
-		console.log(element);
 		element.onclick = function () {
-			console.log(element);
-			console.log(element.dataset.id);
-
 			let localStorageObject = {
 				id: element.dataset.id,
 				title: element.dataset.title,
@@ -57,8 +51,6 @@ searchBar.onkeyup = function () {
 			let isInStorage = wishList.find(
 				(productObject) => productObject.id === localStorageObject.id
 			);
-
-			console.log('isInStorage', isInStorage);
 
 			if (isInStorage === undefined) {
 				// Insert it into local storage
@@ -71,8 +63,6 @@ searchBar.onkeyup = function () {
 				let removedElementArray = wishList.filter(
 					(productObject) => productObject.id !== localStorageObject.id
 				);
-
-				console.log('removedElementArray', removedElementArray);
 
 				saveToStorage('wishList', removedElementArray);
 			}
